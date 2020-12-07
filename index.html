@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Jokes dashboard</title>
+</head>
+<body>
+<div class="wrapper">
+	<div class="get-joke">
+		<div class="get-joke_container">
+			<div class="description">
+				<h3 class="title">Hey!</h3>
+				<h2 class="subtitle">Let’s try to find a joke for you:</h2>
+			</div>
+			<form id="form">
+				<label>
+					<input type="radio" class="radio" value="random" name="check" checked>
+					<span class="fake"></span>
+					<span class="name-radio">Random</span> 
+				</label>
+			
+				<label>
+					<input type="radio" class="radio" value="categories" name="check">
+					<span class="fake"></span>
+					<span class="name-radio">From categories</span>
+				</label>
+				<div class="categoriesJoke"></div>
+			
+				<label>
+					<input type="radio" class="radio" value="search" name="check">
+					<span class="fake"></span>
+					<span class="name-radio">Search</span>
+					<input type="text" id="search" class="hide" placeholder="enter your request...">
+				</label>
+			
+				<button class="get-joke__btn">
+					Get Joke
+				</button>
+			</form>
+		</div>
+		<div class="render-joke">
+			
+		</div>
+	</div>
+	<div class="favorite-joke"></div>
+</div>
+	
+
+	
+
+	<script src="main.js"></script>
+</body>
+</html>
